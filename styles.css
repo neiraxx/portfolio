@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;  
+}
+
+body {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+/* navbar styling */
+
+nav {
+    position: fixed;
+    display: flex;
+    background-color: var(--red);
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+ul {
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: 0.3s ease-out;
+}   
+
+.nav-link:hover {
+    color: var(--gray);
+    transition: 0.3s ease-in;
+}
+
+@media (max-width: 550px) {
+    nav {
+        width: 100%;
+        align-items:center;
+        flex-direction: column;
+        padding: 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        font-weight:bold;
+    }
+}
+/* navbar styling */
+
+/* welcome styling */
+
+#welcome-section {
+    background: linear-gradient(to bottom, var(--red),var(--gray),var(--blue));
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        font-size: 1.5rem;
+}
+
+#welcome {
+    color: var(--white);
+    font-weight: 800;
+}
+
+#welcome-section p {
+    color: var(--red);
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@media (max-width: 700px) {
+    #welcome-section {
+            font-size: 0.8rem;
+        }
+}
+/* welcome styling */
+
+/* projects syling */
+
+#container {
+    background-color: var(--gray);
+    max-width: 100%;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+#container h1 {
+    color:var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#projects {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    gap: 5rem;  
+}
+
+.project-image {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.project-image:hover {
+    transition: 0.2s;
+    transform:scale(1.1);
+    border-radius: 1rem;
+}
+
+figcaption {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration:none;   
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+figcaption a {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s;
+        .code {
+    transition: color 0.3s ease-out;
+    color: var(--blue   );
+}
+
+}
+
+figcaption a:hover {
+    color: var(--white);
+    font-size: 1.2rem;
+    transition: 0.3s;
+        .code {
+            color:var(--red);
+        gap: 1rem;
+        transition: color 0.3s ease-out;
+        }
+}
+
+
+@media (width: 500px) {
+        .project-image{
+            width: 400px;
+        }
+    
+        .project-image:hover{
+            transform:none;
+            border-radius: none;
+        }
+    }
+/* projects syling */
+
+/* about syling */
+
+.about {
+    background-color: var(--blue);
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    color: var(--white);
+    border-top: 5px solid black;
+        h1 {
+        padding: 1.5rem;
+        }
+}
+
+.social {
+    display: inline-block;
+}
+
+#profile-link {
+    color:var(--white);
+    font-size: 2rem;
+}
+
+#profile-link i {
+    transition: 0.3s;
+}
+
+#profile-link i:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+}
+
+/* about syling */
