@@ -73,7 +73,7 @@ ul {
         align-items: center;
         width: 100%;
         height: 100vh;
-        font-size: 1.5rem;
+        font-size: 2rem;
 }
 
 #welcome {
@@ -88,11 +88,6 @@ ul {
 
 }
 
-@media (min-device-width: 1200px) {
-    #welcome-section {
-            font-size: 2rem;
-        }
-}
 /* welcome styling */
 
 /* projects syling */
@@ -123,12 +118,14 @@ ul {
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;
-    transition: 0.2s;
+    height: auto;
+    max-width: 100%;
+    
 }
 
 .project-image:hover {
-    transition: 0.2s;
-    transform:scale(1.1);
+    transform: none;
+    border-radius: none;
 }
 
 figcaption {
@@ -139,6 +136,8 @@ figcaption {
     padding: 1.5rem;
     font-weight: 800;
     transition: 0.3s;
+    height: auto;
+    max-width: 100%;
 }
 
 figcaption a {
@@ -164,23 +163,6 @@ figcaption a:hover {
         }
 }
 
-
-@media (min-device-width: 1200px) {
-        .project-image{
-            height: auto;
-            max-width: 100%;
-        }
-    
-        .project-image:hover{
-            transform: none;
-            border-radius: none;
-        }
-
-         figcaption {
-            height: auto;
-            max-width: 100%;
-         }
-    }
 /* projects syling */
 
 /* about syling */
@@ -213,12 +195,8 @@ figcaption a:hover {
 #profile-link i:hover {
     transform:scale(1.2);
     transition: 0.3s;
+    padding-bottom:1rem;
+    padding-top:1rem;
 }
 
-@media (min-device-width:320px) and (max-device-width:768px) {
-    #profile-link {
-        padding-bottom:1rem;
-        padding-top:1rem;
-    }
-}
 /* about syling */
