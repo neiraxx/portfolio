@@ -48,7 +48,7 @@ ul {
     transition: 0.3s ease-in;
 }
 
-@media (max-width: 500px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
     nav {
         width: 100%;
         align-items:center;
@@ -168,7 +168,8 @@ figcaption a:hover {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
         .project-image{
-            width: 100%;
+            height: auto;
+            max-width: 100%;
         }
     
         .project-image:hover{
@@ -177,7 +178,8 @@ figcaption a:hover {
         }
 
          figcaption {
-            width:100%;
+            height: auto;
+            max-width: 100%;
          }
     }
 /* projects syling */
