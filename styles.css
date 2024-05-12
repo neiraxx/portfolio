@@ -48,7 +48,7 @@ ul {
     transition: 0.3s ease-in;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 400px) {
     nav {
         width: 100%;
         align-items:center;
@@ -88,7 +88,7 @@ ul {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
     #welcome-section {
             font-size: 0.8rem;
         }
