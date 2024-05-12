@@ -48,7 +48,7 @@ ul {
     transition: 0.3s ease-in;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
+@media (min-device-width: 1200px) {
     nav {
         width: 100%;
         align-items:center;
@@ -57,7 +57,7 @@ ul {
     }
 
     .nav-link {
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight:bold;
     }
 }
@@ -88,9 +88,9 @@ ul {
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
+@media (min-device-width: 1200px) {
     #welcome-section {
-            font-size: 0.8rem;
+            font-size: 2rem;
         }
 }
 /* welcome styling */
@@ -129,7 +129,6 @@ ul {
 .project-image:hover {
     transition: 0.2s;
     transform:scale(1.1);
-    border-radius: 1rem;
 }
 
 figcaption {
@@ -166,14 +165,14 @@ figcaption a:hover {
 }
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
+@media (min-device-width: 1200px) {
         .project-image{
             height: auto;
             max-width: 100%;
         }
     
         .project-image:hover{
-            transform:none;
+            transform: none;
             border-radius: none;
         }
 
@@ -216,7 +215,7 @@ figcaption a:hover {
     transition: 0.3s;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
+@media (min-device-width:320px) and (max-device-width:768px) {
     #profile-link {
         padding-bottom:1rem;
         padding-top:1rem;
