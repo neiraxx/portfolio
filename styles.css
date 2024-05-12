@@ -48,7 +48,7 @@ ul {
     transition: 0.3s ease-in;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     nav {
         width: 100%;
         align-items:center;
@@ -88,7 +88,7 @@ ul {
 
 }
 
-@media (max-width: 400px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
     #welcome-section {
             font-size: 0.8rem;
         }
@@ -166,15 +166,19 @@ figcaption a:hover {
 }
 
 
-@media (width: 500px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
         .project-image{
-            width: 400px;
+            width: 300px;
         }
     
         .project-image:hover{
             transform:none;
             border-radius: none;
         }
+
+         figcaption {
+            width:300px;
+         }
     }
 /* projects syling */
 
@@ -210,4 +214,10 @@ figcaption a:hover {
     transition: 0.3s;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
+    #profile-link {
+        padding-bottom:1rem;
+        padding-top:1rem;
+    }
+}
 /* about syling */
