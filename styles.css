@@ -111,7 +111,7 @@ ul {
     text-decoration: underline;
 }
 
-#projects {
+#work {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -168,7 +168,7 @@ figcaption a:hover {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) or (orientation:portrait) {
         .project-image{
-            width: 300px;
+            width: 100%;
         }
     
         .project-image:hover{
@@ -177,14 +177,14 @@ figcaption a:hover {
         }
 
          figcaption {
-            width:300px;
+            width:100%;
          }
     }
 /* projects syling */
 
 /* about syling */
 
-.about {
+#contact {
     background-color: var(--blue);
     text-align: center;
     width: 100%;
